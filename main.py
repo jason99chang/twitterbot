@@ -16,10 +16,7 @@ def getCatFact():
 
 print("Twitter Bot activated")
 
-CONSUMER_KEY = 'FEE1BOnvYFvOBL4r2dnbpe8PG'
-CONSUMER_SECRET = '51qnc0PjlUCQ3gqY0EchyhmEnUFjJDTtV2Dk03T4cplNE9GwuF'
-ACCESS_KEY = '707510112-wRiWm9oISspQzxvnOMkBkPOIvEgGTkWycOFC3P9C'
-ACCESS_SECRET = 'ZwR0TNIABTPhiqddVws4sb0Tf5TBJdlAGh9swKFhDJnOp'
+
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY,ACCESS_SECRET)
@@ -36,4 +33,4 @@ for a in range(0,100):
     api.update_status('Did you know ? ' + factid + ' Wow !')
     currenttime = datetime.datetime.now()
     print('Meow at ' + str(currenttime) + '!')
-    time.sleep(1200)
+    time.sleep(60)
